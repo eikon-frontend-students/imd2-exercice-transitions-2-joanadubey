@@ -101,6 +101,73 @@ video {
   gap: 12px;
 }
 
-// ---------------------------------------------
-// Votre code ici :
-// ---------------------------------------------
+.marker .product-cart {
+  opacity: 0%;
+  transition: opacity 0.5s;
+}
+.marker:hover .product-cart {
+  opacity: 100%;
+}
+
+.marker .product-cart:hover {
+  background-color: var(--blue);
+  transition: background-color 0.5s;
+}
+
+.pencil .product-cart {
+  opacity: 0%;
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.pencil:hover .product-cart {
+  opacity: 100%;
+
+  transform: translateY(0);
+}
+
+.pencil .product-cart:hover {
+  background-color: var(--blue);
+  transition: background-color 0.5s;
+}
+
+.scissors {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.scissors:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.sketchbook .product-image img {
+  transition: transform 0.5s;
+}
+.sketchbook .product-image {
+  overflow: hidden;
+}
+
+.sketchbook:hover .product-image img {
+  transform: scale(1.2);
+}
+
+.glue .product-image {
+  filter: blur(3px);
+  transition: filter 0.5s;
+}
+
+.glue:hover .product-image {
+  filter: blur(0);
+}
+
+.share-icon .share-list:nth-child(1) {
+  opacity: 0%;
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.share-icon:hover .share-list:nth-child(1) {
+  opacity: 100%;
+
+  transform: translateY(0);
+}
