@@ -160,14 +160,21 @@ video {
   filter: blur(0);
 }
 
-.share-icon .share-list:nth-child(1) {
+.share .share-list .share-icon {
   opacity: 0%;
   transform: translateY(-50px);
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.share-icon:hover .share-list:nth-child(1) {
-  opacity: 100%;
+.share .share-list .share-icon:nth-child(2) {
+  transition-delay: 0.2s;
+}
 
+.share .share-list .share-icon:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.share:hover .share-list .share-icon {
+  opacity: 100%;
   transform: translateY(0);
 }
